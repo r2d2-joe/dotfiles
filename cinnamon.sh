@@ -8,11 +8,12 @@ rm lightdm-gtk-greeter.conf
 echo "******* cloning dotfiles for EndeavourOS - Cinnamon Theming *******" && sleep 6
 git clone https://github.com/r2d2-joe/dotfiles.git
 cd dotfiles
-sudo cp -R endeavouros /usr/share/endeavouros
-rm -R ~/.config ~/.cinnamon ~/.fontconfig ~/icons
+sudo cp -R endeavouros /usr/share/
+rm -R ~/.config ~/.cinnamon ~/.fontconfig ~/.icons
 cp -R CINNAMON/. ~/
 dconf load ~/ <cinnamon.dconf
 cd ~/
+rm -R dotfiles
 echo "******* All Done --- restarting Desktop Manager *******" && sleep 6
 echo "******* Please login again and enjoy EndeavourOS Theming! *******" && sleep 6
 sudo systemctl restart lightdm
