@@ -9,11 +9,11 @@ echo "******* cloning dotfiles for EndeavourOS - Cinnamon Theming *******" && sl
 git clone https://github.com/r2d2-joe/dotfiles.git
 cd dotfiles
 sudo cp -R endeavouros /usr/share/
-rm -R ~/.config ~/.cinnamon ~/.fontconfig ~/.icons
+rm -R ~/.config ~/.cinnamon ~/.fontconfig ~/.icons ~/.local/share/cinnamon
 cp -R CINNAMON/. ~/
 dconf load ~/ <cinnamon.dconf
 cd ~/
-rm -R dotfiles
+sudo rm -R dotfiles
 echo "******* All Done --- restarting Desktop Manager *******" && sleep 3
-echo "******* Please login again and enjoy EndeavourOS Theming! *******" && sleep 3
+echo "******* Please login again and enjoy EndeavourOS Theming! *******" && sleep 2
 sudo systemctl restart lightdm
