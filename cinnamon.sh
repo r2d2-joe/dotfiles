@@ -11,7 +11,7 @@ cd dotfiles
 sudo cp -R endeavouros /usr/share/
 rm -R ~/.config ~/.cinnamon ~/.fontconfig ~/.icons ~/.local/share/cinnamon
 cp -R CINNAMON/. ~/
-dconf load ~/ <cinnamon.dconf
+dconf load / <cinnamon.dconf
 cd ~/
 sudo rm -R dotfiles
 echo "******* All Done --- restarting Desktop Manager *******" && sleep 3
