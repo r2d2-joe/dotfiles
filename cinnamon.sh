@@ -9,7 +9,7 @@ echo "******* cloning dotfiles for EndeavourOS - Cinnamon Theming *******" && sl
 git clone https://github.com/r2d2-joe/dotfiles.git
 cd dotfiles
 sudo cp -R endeavouros /usr/share/
-rm -R ~/.config ~/.cinnamon ~/.fontconfig ~/.icons ~/.local/share/cinnamon
+rm -R ~/.cinnamon ~/.fontconfig ~/.icons ~/.local/share/cinnamon
 cp -R CINNAMON/. ~/
 dconf load / <cinnamon.dconf
 cd ~/
