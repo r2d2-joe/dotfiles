@@ -10,6 +10,7 @@ git clone https://github.com/r2d2-joe/dotfiles.git
 cd dotfiles
 sudo cp -R endeavouros /usr/share/
 rm -R ~/.cinnamon ~/.fontconfig ~/.icons ~/.local/share/cinnamon
+rm ~/.config/dbus/user
 cp -R CINNAMON/. ~/
 dconf load / <cinnamon.dconf
 cd ~/
